@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [TestNG Sanity Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="3" parallel="tests" name="OrangeHRM Test(failed)" verbose="4">
+    <parameter name="browser" value="safari"/>
+    <parameter name="url" value="https://www.orangehrm.com/orangehrm-30-day-trial/"/>
+    <parameter name="timeout" value="10"/>
+    <classes>
+      <class name="AppTests.OrangeHRMTest">
+        <methods>
+          <include name="ContactSLinkTest"/>
+          <include name="verifyTitleTest"/>
+          <include name="tearDown"/>
+          <include name="logoTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- AppTests.OrangeHRMTest -->
+    </classes>
+  </test> <!-- OrangeHRM Test(failed) -->
+</suite> <!-- Failed suite [TestNG Sanity Suite] -->
